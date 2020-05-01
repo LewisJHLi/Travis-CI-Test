@@ -7,7 +7,7 @@ script:
   - docker images lewisli1020/node
 
 before_deploy:
-  - docker login -u lewisli1020@gmail.com -p Kaho5016223986
+  - docker login -u lewisli1020 -p Kaho5016223986
 
 deploy:
   provider: script
