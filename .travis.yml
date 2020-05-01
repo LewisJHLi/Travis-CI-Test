@@ -1,0 +1,7 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t lewisli1020/node .
+  - docker images lewisli1020/node
