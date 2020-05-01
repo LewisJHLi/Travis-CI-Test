@@ -5,3 +5,12 @@ services:
 script:
   - docker build -t lewisli1020/node .
   - docker images lewisli1020/node
+
+before_deploy:
+  - docker login -u lewisli1020@gmail.com -p Kaho5016223986
+
+deploy:
+  provider: script
+  script: docker push lewisli1020/node
+  on:
+    branch: master
